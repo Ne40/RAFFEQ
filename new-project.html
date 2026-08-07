@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>موقع المشروع | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="new-project" data-title="موقع المشروع" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="wizard-wrap">
+  <div class="wizard-progress" aria-label="خطوات إعداد المشروع">
+      <div class="wizard-progress-meta"><span>الخطوة 2 من 13</span><strong>15%</strong></div>
+      <div class="wizard-progress-track"><span style="width:15%"></span></div>
+    </div>
+  <section class="wizard-card wizard-question-card">
+    <div class="wizard-head"><div><span class="eyebrow">Project Quiz</span><h2>أين يقع مشروعك؟</h2><p class="muted">اختر المحافظة، وبعدها ستظهر المدن التابعة لها تلقائيًا.</p></div><span class="wizard-hero-icon">📍</span></div>
+    <form class="form-grid single-question-form" id="new-project-form">
+      <div><label for="governorate">المحافظة</label><select id="governorate" name="governorate" required><option value="">اختر المحافظة</option></select></div>
+      <div><label for="city">المدينة</label><select id="city" name="city" required disabled><option value="">اختر المحافظة أولًا</option></select></div>
+      <div class="question-note">يُستخدم الموقع لاقتراح موردين وفروع قريبة وتقدير أوقات التوصيل.</div>
+      <div class="wizard-actions"><a class="btn btn-light" href="profession.html">السابق</a><button class="btn btn-primary" type="submit">التالي</button></div>
+    </form>
+  </section>
+</div></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/project-wizard.js"></script>
+</body>
+</html>

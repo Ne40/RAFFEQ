@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>المحادثة | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="chat" data-title="المحادثة" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="chat-page-grid"><aside class="section-card chat-context"><span class="eyebrow">المشروع</span><h3 id="chat-project-title">طلب تصميم داخلي</h3><div id="chat-request-summary" class="summary-list"></div><div class="status-timeline"><span class="done">تم قبول الطلب</span><span class="active">جاري التنفيذ</span><span>تم الانتهاء</span></div></aside><section class="section-card chat-panel"><div class="section-card-head"><div><h3 id="chat-party-name">المحادثة</h3><small>يمكن تبادل الرسائل والصور والملفات.</small></div><span class="online-dot">متصل</span></div><div id="request-chat-messages" class="chat-messages"></div><form id="request-chat-form" class="chat-composer"><label class="icon-btn file-button" title="إرفاق ملف">＋<input id="chat-file" type="file" hidden></label><input name="message" placeholder="اكتب رسالة..." required><button class="btn btn-primary" type="submit">إرسال</button></form></section></div></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/service-requests.js"></script>
+</body>
+</html>

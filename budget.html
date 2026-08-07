@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>الميزانية | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="budget" data-title="الميزانية" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="wizard-wrap">
+  <div class="wizard-progress" aria-label="خطوات إعداد المشروع">
+      <div class="wizard-progress-meta"><span>الخطوة 8 من 13</span><strong>62%</strong></div>
+      <div class="wizard-progress-track"><span style="width:62%"></span></div>
+    </div>
+  <section class="wizard-card wizard-question-card">
+    <div class="wizard-head"><div><span class="eyebrow">Project Quiz</span><h2>ما الميزانية المناسبة؟</h2><p class="muted">سنستخدم النطاق لترتيب الأثاث واقتراح بدائل أقل سعرًا.</p></div><span class="wizard-hero-icon">💰</span></div>
+    <div class="range-row"><div><label for="min-budget">الحد الأدنى</label><input id="min-budget" name="min_budget" type="number" min="10000" step="5000"></div><div><label for="max-budget">الحد الأقصى</label><input id="max-budget" name="max_budget" type="number" min="20000" step="5000"></div></div>
+    <div class="budget-slider-wrap"><label for="budget-slider">الحد الأقصى للميزانية</label><input id="budget-slider" type="range" min="20000" max="1000000" step="5000"></div>
+    <div class="budget-preview"><div><small>من</small><strong id="min-budget-preview"></strong></div><div><small>إلى</small><strong id="max-budget-preview"></strong></div></div>
+    <div class="wizard-actions"><a class="btn btn-light" href="choose-colors.html">السابق</a><button class="btn btn-primary" type="button" id="budget-next">التالي</button></div>
+  </section>
+</div></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/project-wizard.js"></script>
+</body>
+</html>

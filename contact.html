@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>مركز المساعدة | RAFEEQ</title>
+</head>
+<body data-layout="public" data-page="contact">
+  <div id="site-header"></div>
+  
+<main class="section">
+  <div class="container">
+    <section class="contact-hero">
+      <span class="eyebrow" style="color:#fff;background:rgba(255,255,255,.12)">Help Center</span>
+      <h1 style="font-size:clamp(2.8rem,7vw,6rem);line-height:1;margin:0 0 18px">إحنا هنا نساعدك.</h1>
+      <p style="max-width:650px;color:rgba(255,255,255,.72)">ابعت سؤالك أو مشكلة المشروع، وفريق RAFEEQ هيراجعها ويتواصل معك.</p>
+    </section>
+    <section class="contact-grid" style="margin-top:24px">
+      <form class="section-card form-grid" id="contact-form">
+        <h2>Contact Form</h2>
+        <div class="form-row"><div><label>الاسم</label><input name="name" required></div><div><label>البريد</label><input name="email" type="email" required></div></div>
+        <div><label>نوع المساعدة</label><select name="topic"><option>مشكلة في الحساب</option><option>مشكلة في المشروع</option><option>طلب أو منتج</option><option>اقتراح أو شراكة</option></select></div>
+        <div><label>الرسالة</label><textarea name="message" required></textarea></div>
+        <button class="btn btn-primary" type="submit">إرسال الرسالة</button>
+      </form>
+      <aside class="contact-info">
+        <h2>تواصل سريع</h2>
+        <div class="notification-list">
+          <div class="list-item" style="border-color:rgba(255,255,255,.15)"><div class="list-icon">✉</div><div><strong>Support Email</strong><small style="display:block;color:rgba(255,255,255,.65)">support@rafeeq.ai</small></div></div>
+          <div class="list-item" style="border-color:rgba(255,255,255,.15)"><div class="list-icon">💬</div><div><strong>Live Chat</strong><small style="display:block;color:rgba(255,255,255,.65)">متاح يوميًا من 10 ص إلى 8 م</small></div></div>
+          <div class="list-item" style="border-color:rgba(255,255,255,.15)"><div class="list-icon">⏱</div><div><strong>وقت الرد</strong><small style="display:block;color:rgba(255,255,255,.65)">خلال يوم عمل</small></div></div>
+        </div>
+        <button class="btn btn-secondary btn-block" id="live-chat" style="margin-top:20px">بدء محادثة</button>
+      </aside>
+    </section>
+    <section class="section-tight">
+      <div class="section-head"><div><h2>FAQ</h2></div></div>
+      <div class="faq-list">
+        <article class="faq-item"><button><span>كيف أعدّل بيانات المشروع؟</span><span>＋</span></button><div class="faq-answer">افتح صفحة مشاريعي واختر المشروع، ثم ارجع للمرحلة المطلوب تعديلها.</div></article>
+        <article class="faq-item"><button><span>هل يمكن حذف الصور المرفوعة؟</span><span>＋</span></button><div class="faq-answer">نعم، كل صورة في صفحة الرفع تحتوي على زر حذف قبل الانتقال للمرحلة التالية.</div></article>
+      </div>
+    </section>
+  </div>
+</main>
+
+  <div id="site-footer"></div>
+  <script type="module" src="./src/js/app.js"></script>
+<script type="module" src="./src/js/contact.js"></script>
+</body>
+</html>

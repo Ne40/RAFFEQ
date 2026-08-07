@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>نتيجة التصميم | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="ai-result" data-title="نتيجة التصميم" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="page-title result-title-bar"><div><span class="eyebrow">الخطوة 13 من 13</span><h2 id="result-project-title">التصميم النهائي</h2><p class="muted">استكشف العرض 360°، الرسم التوضيحي، الأثاث، ومساعد RAFEEQ AI.</p></div><div class="result-actions"><button class="btn btn-light" id="download-design">تحميل PDF</button><button class="btn btn-secondary" id="save-design">حفظ التصميم</button></div></div>
+<div id="trial-usage-panel" class="trial-usage-panel hidden"></div>
+<div id="room-result-tabs" class="room-result-tabs"></div>
+<section id="interactive-result"></section>
+<section class="ai-chat-layout" style="margin-top:22px">
+  <div class="section-card ai-chat-card">
+    <div class="section-card-head"><div><h3>مساعد RAFEEQ AI</h3><small>اطلب تعديل التصميم أو اسأل عن أي عنصر.</small></div><span class="online-dot">متصل</span></div>
+    <div id="ai-chat-messages" class="chat-messages ai-chat-messages"></div>
+    <div class="quick-prompts"><button data-ai-prompt="غيّر لون الحوائط إلى لون أهدأ">غيّر لون الحوائط</button><button data-ai-prompt="اقترح بديلًا أقل سعرًا للأريكة">بديل أقل سعرًا</button><button data-ai-prompt="أضف مساحة عمل مناسبة">أضف مساحة عمل</button><button data-ai-prompt="لماذا تم اختيار هذه الألوان؟">لماذا هذه الألوان؟</button></div>
+    <form id="ai-chat-form" class="chat-composer"><input name="message" required placeholder="اكتب التعديل أو السؤال..."><button class="btn btn-primary" type="submit">إرسال</button></form>
+  </div>
+  <aside class="section-card version-history"><div class="section-card-head"><h3>نسخ التصميم</h3><span class="pill" id="version-count">1 نسخة</span></div><div id="design-versions" class="version-list"></div></aside>
+</section></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/project-wizard.js"></script>
+</body>
+</html>

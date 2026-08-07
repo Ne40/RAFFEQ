@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
+<defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F6F1E7"/>
+    <stop offset="1" stop-color="#E9DDC9"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#101710" flood-opacity=".32"/>
+  </filter>
+</defs>
+<rect width="900" height="680" rx="48" fill="#2E3D34"/>
+<ellipse cx="520" cy="590" rx="310" ry="58" fill="#17221c" opacity=".55"/>
+<g filter="url(#shadow)">
+  <path d="M220 500V245L455 95l245 150v255z" fill="url(#wall)"/>
+  <path d="M205 250L455 70l265 175-34 48L455 132 238 293z" fill="#E07A5F"/>
+  <path d="M455 132v368H220V293z" fill="#F7EEDF"/>
+  <path d="M455 132l231 161v207H455z" fill="#E9D5BC"/>
+  <rect x="285" y="315" width="125" height="185" rx="4" fill="#2E3D34"/>
+  <rect x="500" y="300" width="120" height="120" rx="8" fill="#9FC6D0"/>
+  <path d="M515 420h91v80h-91z" fill="#F2C14E" opacity=".9"/>
+  <rect x="535" y="320" width="18" height="100" fill="#F6F1E7" opacity=".7"/>
+  <rect x="570" y="320" width="18" height="100" fill="#F6F1E7" opacity=".7"/>
+  <path d="M260 500h420l-60 62H205z" fill="#C7B199"/>
+  <path d="M230 560h415" stroke="#F2C14E" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="680" cy="425" r="48" fill="#AEB7A4"/>
+  <path d="M680 380v112" stroke="#2E3D34" stroke-width="12" stroke-linecap="round"/>
+  <path d="M680 414c-20-24-43-26-58-6 23 7 36 18 58 6zm0 24c22-24 47-25 60-2-23 4-39 15-60 2z" fill="#2E3D34"/>
+</g>
+<g transform="translate(70 60)">
+  <rect x="0" y="0" width="250" height="78" rx="24" fill="#F6F1E7" opacity=".95"/>
+  <circle cx="46" cy="39" r="22" fill="#F2C14E"/>
+  <path d="M35 42h22M46 31v22" stroke="#2E3D34" stroke-width="5" stroke-linecap="round"/>
+  <text x="82" y="34" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2F2F2F">AI Design Ready</text>
+  <text x="82" y="57" font-family="Arial, sans-serif" font-size="13" fill="#5f665f">Real products • Real budget</text>
+</g>
+</svg>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>إنشاء حساب | RAFEEQ</title>
+</head>
+<body data-layout="auth" data-page="register">
+  <main class="auth-page">
+    <section class="auth-visual">
+      <div><span class="eyebrow">Design to Reality</span><h2>حساب واحد.<br>تجربة مناسبة لدورك.</h2><p style="color:rgba(255,255,255,.74);max-width:520px">اختر نوع الحساب، وابدأ في التصميم أو تقديم الخدمات أو إدارة منتجات شركتك من لوحة تحكم مخصصة.</p></div>
+      <img src="./assets/hero-room.svg" alt="RAFEEQ interior design">
+    </section>
+    <section class="auth-panel">
+      <div class="auth-box auth-box-wide">
+        <a class="auth-logo" href="index.html"><img src="./assets/logo-mark.jpg" alt="RAFEEQ"><strong>RAFEEQ</strong></a>
+        <h1>إنشاء حساب</h1>
+        <p class="auth-subtitle">اختر نوع الحساب ثم أكمل بياناتك.</p>
+        <form class="form-grid" id="register-form">
+          <div>
+            <label>نوع الحساب</label>
+            <div class="account-type-grid">
+              <label class="account-type-card selected"><input type="radio" name="account_type" value="user" checked><span>👤</span><strong>مستخدم</strong><small>تصميم وشراء الأثاث</small></label>
+              <label class="account-type-card"><input type="radio" name="account_type" value="interior_designer"><span>🎨</span><strong>مصمم داخلي</strong><small>استقبال طلبات العملاء</small></label>
+              <label class="account-type-card"><input type="radio" name="account_type" value="company"><span>🏢</span><strong>شركة</strong><small>إدارة المنتجات والمبيعات</small></label>
+              <label class="account-type-card"><input type="radio" name="account_type" value="engineering_office"><span>📐</span><strong>مكتب هندسي</strong><small>تنفيذ وإدارة المشروعات</small></label>
+            </div>
+          </div>
+          <button class="btn google-btn" type="button" data-google-login>G&nbsp;&nbsp; المتابعة باستخدام Google</button>
+          <div class="divider">أو</div>
+          <div><label for="register-name">الاسم بالكامل</label><input id="register-name" name="full_name" type="text" autocomplete="name" required placeholder="الاسم بالكامل"></div>
+          <div class="form-row">
+            <div><label for="register-email">البريد الإلكتروني</label><input id="register-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com"></div>
+            <div><label for="register-phone">رقم الهاتف</label><input id="register-phone" name="phone" type="tel" autocomplete="tel" placeholder="+20"></div>
+          </div>
+          <div class="form-row">
+            <div><label for="register-password">كلمة المرور</label><div class="password-wrap"><input id="register-password" name="password" type="password" autocomplete="new-password" required placeholder="8 أحرف على الأقل"><button type="button" data-toggle-password="register-password">إظهار</button></div></div>
+            <div><label for="register-confirm">تأكيد كلمة المرور</label><div class="password-wrap"><input id="register-confirm" name="confirm_password" type="password" autocomplete="new-password" required placeholder="أعد كتابة كلمة المرور"><button type="button" data-toggle-password="register-confirm">إظهار</button></div></div>
+          </div>
+          <label class="checkbox-inline"><input type="checkbox" required> أوافق على الشروط والأحكام وسياسة الخصوصية.</label>
+          <button class="btn btn-primary btn-block" type="submit">إنشاء الحساب</button>
+        </form>
+        <p class="auth-foot">لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/auth.js"></script>
+</body></html>

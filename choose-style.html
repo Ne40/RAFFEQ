@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>نمط التصميم | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="choose-style" data-title="نمط التصميم" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="wizard-wrap">
+  <div class="wizard-progress" aria-label="خطوات إعداد المشروع">
+      <div class="wizard-progress-meta"><span>الخطوة 6 من 13</span><strong>46%</strong></div>
+      <div class="wizard-progress-track"><span style="width:46%"></span></div>
+    </div>
+  <section class="wizard-card wizard-question-card">
+    <div class="wizard-head"><div><span class="eyebrow">Project Quiz</span><h2>أي نمط تصميم تفضّل؟</h2><p class="muted">اختر النمط الأقرب لذوقك، ويمكن تغييره لاحقًا من مساعد RAFEEQ AI.</p></div><span class="wizard-hero-icon">🎨</span></div>
+    <div class="choice-grid style-grid">
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Modern"><div class="style-preview modern-preview"></div><strong>Modern</strong><p class="muted">خطوط نظيفة ووظائف عملية.</p></label>
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Scandinavian"><div class="style-preview scandinavian-preview"></div><strong>Scandinavian</strong><p class="muted">ألوان هادئة وخشب طبيعي.</p></label>
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Minimalist"><div class="style-preview minimalist-preview"></div><strong>Minimalist</strong><p class="muted">عناصر أقل ومساحات أكثر هدوءًا.</p></label>
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Classic"><div class="style-preview classic-preview"></div><strong>Classic</strong><p class="muted">تفاصيل متوازنة وطابع خالد.</p></label>
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Industrial"><div class="style-preview industrial-preview"></div><strong>Industrial</strong><p class="muted">معدن وخامات خام جريئة.</p></label>
+      <label class="choice-card visual-choice"><input type="radio" name="style" value="Bohemian"><div class="style-preview bohemian-preview"></div><strong>Bohemian</strong><p class="muted">ألوان دافئة ونقوش وخامات طبيعية.</p></label>
+    </div>
+    <div class="wizard-actions"><a class="btn btn-light" href="room-area.html">السابق</a><button class="btn btn-primary" type="button" id="style-next">التالي</button></div>
+  </section>
+</div></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/project-wizard.js"></script>
+</body>
+</html>

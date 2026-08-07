@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="إدارة الملف الشخصي وحساب RAFEEQ Home">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>الملف الشخصي | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="profile" data-title="الملف الشخصي" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main">
+      <div class="profile-hero section-card">
+        <span class="avatar" id="profile-avatar">R</span>
+        <div>
+          <h2 id="profile-name" style="margin:0">مستخدم RAFEEQ</h2>
+          <p class="muted" id="profile-email" style="margin:4px 0 8px"></p>
+          <span class="pill success" id="profile-account-type">مستخدم</span>
+        </div>
+      </div>
+
+      <section class="grid grid-2">
+        <form class="section-card form-grid" id="profile-form">
+          <div class="section-heading compact">
+            <div><span class="eyebrow">الحساب</span><h3>المعلومات الشخصية</h3></div>
+          </div>
+          <div><label>الاسم بالكامل</label><input name="full_name" required></div>
+          <div><label>البريد الإلكتروني</label><input name="email" type="email" disabled></div>
+          <div><label>رقم الهاتف</label><input name="phone" type="tel" inputmode="tel"></div>
+          <div><label>نوع الحساب</label>
+            <select name="account_type" disabled>
+              <option value="user">مستخدم</option>
+              <option value="interior_designer">مصمم داخلي</option>
+              <option value="company">شركة</option>
+              <option value="engineering_office">مكتب هندسي</option>
+            </select>
+            <small class="muted">يتم تحديد نوع الحساب عند التسجيل حفاظًا على الصلاحيات.</small>
+          </div>
+
+          <div id="professional-profile-fields" class="form-grid" style="grid-column:1/-1" hidden>
+            <div><label id="company-name-label">الاسم المهني / اسم الاستوديو</label><input name="company_name"></div>
+            <div><label>رابط معرض الأعمال أو الموقع</label><input name="portfolio_url" type="url" placeholder="https://"></div>
+            <div style="grid-column:1/-1"><label>نبذة تعريفية</label><textarea name="bio" rows="4" placeholder="اكتب نبذة مختصرة عن خبرتك وخدماتك"></textarea></div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">حفظ التعديلات</button>
+        </form>
+
+        <form class="section-card form-grid" id="change-password-form">
+          <div class="section-heading compact"><div><span class="eyebrow">الأمان</span><h3>تغيير كلمة المرور</h3></div></div>
+          <div><label>كلمة المرور الجديدة</label><input name="new_password" type="password" minlength="8" autocomplete="new-password" required></div>
+          <button class="btn btn-dark" type="submit">تغيير كلمة المرور</button>
+          <hr style="width:100%;border:0;border-top:1px solid var(--line)">
+          <h3>العناوين المحفوظة</h3>
+          <div class="list-item"><div class="list-icon">📍</div><div><strong>لا توجد عناوين محفوظة</strong><small style="display:block">سيتم حفظ عنوانك بعد أول طلب.</small></div></div>
+          <h3>وسائل الدفع</h3>
+          <div class="list-item"><div class="list-icon">💳</div><div><strong>لا توجد بطاقة محفوظة</strong><small style="display:block">المشروع لا يحفظ رقم البطاقة أو رمز CVV.</small></div></div>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/account.js"></script>
+</body>
+</html>

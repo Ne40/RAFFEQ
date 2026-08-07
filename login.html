@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>تسجيل الدخول | RAFEEQ</title>
+</head>
+<body data-layout="auth" data-page="login">
+  <main class="auth-page">
+    <section class="auth-visual">
+      <div>
+        <span class="eyebrow">Design to Reality</span>
+        <h2>من الفكرة<br>إلى بيت حقيقي.</h2>
+        <p style="color:rgba(255,255,255,.74);max-width:520px">صمّم مساحتك، اضبط الميزانية، واختار أثاثًا حقيقيًا قابلًا للشراء والتنفيذ.</p>
+      </div>
+      <img src="./assets/hero-room.svg" alt="RAFEEQ interior design">
+    </section>
+    <section class="auth-panel">
+      <div class="auth-box">
+        <a class="auth-logo" href="index.html">
+          <img src="./assets/logo-mark.jpg" alt="RAFEEQ">
+          <strong>RAFEEQ</strong>
+        </a>
+        
+<h1>مرحبًا بعودتك</h1>
+<p class="auth-subtitle">سجّل الدخول لمتابعة مشروعاتك وتصميماتك.</p>
+<button class="btn google-btn" type="button" data-google-login>G&nbsp;&nbsp; المتابعة باستخدام Google</button>
+<div class="divider">أو</div>
+<form class="form-grid" id="login-form">
+  <div><label for="login-email">البريد الإلكتروني</label><input id="login-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com"></div>
+  <div><label for="login-password">كلمة المرور</label><div class="password-wrap"><input id="login-password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••"><button type="button" data-toggle-password="login-password">إظهار</button></div></div>
+  <div class="checkbox-row"><label class="checkbox-inline"><input type="checkbox" name="remember" checked> تذكرني</label><a href="forgot-password.html" style="color:var(--terracotta);font-weight:800">نسيت كلمة المرور؟</a></div>
+  <button class="btn btn-primary btn-block" type="submit">تسجيل الدخول</button>
+</form>
+<p class="auth-foot">ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/auth.js"></script>
+</body>
+</html>

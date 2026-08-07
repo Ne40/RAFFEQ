@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة RAFEEQ للتصميم والتشطيب بالذكاء الاصطناعي">
+  <meta name="theme-color" content="#2E3D34">
+  <link rel="icon" href="./assets/logo-mark.jpg">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <title>دفع خدمة التصميم | RAFEEQ</title>
+</head>
+<body class="app-body" data-layout="app" data-page="project-payment" data-title="دفع خدمة التصميم" data-protected="true">
+  <div id="app-sidebar"></div>
+  <div class="app-frame">
+    <div id="app-topbar"></div>
+    <main class="app-main"><div class="wizard-wrap">
+  <div class="wizard-progress" aria-label="خطوات إعداد المشروع">
+      <div class="wizard-progress-meta"><span>الخطوة 10 من 13</span><strong>77%</strong></div>
+      <div class="wizard-progress-track"><span style="width:77%"></span></div>
+    </div>
+  <section class="wizard-card wizard-question-card">
+    <div class="wizard-head"><div><span class="eyebrow">Project Quiz</span><h2>إتمام خدمة التصميم</h2><p class="muted">يمكن للحساب الجديد استخدام تجربة مجانية مرة واحدة، أو الدفع ببطاقة Visa.</p></div><span class="wizard-hero-icon">💳</span></div>
+    <div id="trial-offer" class="trial-offer hidden"><div><span class="trial-badge">FREE TRIAL</span><h3>تصميم مجاني لأول مشروع</h3><p>صورة نهائية + قطع الأثاث + 4 رسائل AI + تعديل واحد.</p></div><button class="btn btn-secondary" id="use-free-trial" type="button">استخدام التجربة المجانية</button></div>
+    <div id="trial-used-note" class="trial-used-note hidden">تم استخدام التجربة المجانية لهذا الحساب. أكمل الدفع لفتح جميع المميزات.</div>
+    <div class="project-payment-grid">
+      <form id="project-payment-form" class="payment-card-form">
+        <div class="visa-badge">VISA</div>
+        <div><label for="card-name">الاسم على البطاقة</label><input id="card-name" name="card_name" autocomplete="cc-name" required placeholder="الاسم كما يظهر على البطاقة"></div>
+        <div><label for="card-number">رقم البطاقة</label><input id="card-number" name="card_number" inputmode="numeric" autocomplete="cc-number" maxlength="19" required placeholder="0000 0000 0000 0000"></div>
+        <div class="form-row"><div><label for="card-expiry">تاريخ الانتهاء</label><input id="card-expiry" name="card_expiry" inputmode="numeric" autocomplete="cc-exp" maxlength="5" required placeholder="MM/YY"></div><div><label for="card-cvv">CVV</label><input id="card-cvv" name="card_cvv" inputmode="numeric" autocomplete="cc-csc" maxlength="4" required placeholder="123"></div></div>
+        <p class="payment-security">🔒 لا يتم حفظ رقم البطاقة أو CVV. هذه واجهة تجريبية لحين ربط بوابة دفع حقيقية.</p>
+        <div class="wizard-actions"><a class="btn btn-light" href="requirements.html">السابق</a><button class="btn btn-primary" type="submit" id="complete-project-payment">إتمام الدفع</button></div>
+      </form>
+      <aside class="payment-summary-card"><span class="eyebrow">ملخص الطلب</span><h3 id="payment-project-title">خدمة تصميم بالذكاء الاصطناعي</h3><div id="payment-summary-details" class="summary-list"></div><div class="payment-total"><span>سعر الخدمة</span><strong id="project-service-price">0 ج.م</strong></div><small>بعد نجاح الدفع أو تفعيل التجربة المجانية سيتم فتح رفع الصور.</small></aside>
+    </div>
+  </section>
+</div></main>
+  </div>
+  <script type="module" src="./src/js/app.js"></script>
+  <script type="module" src="./src/js/project-wizard.js"></script>
+</body>
+</html>
